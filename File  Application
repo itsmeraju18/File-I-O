@@ -1,0 +1,17 @@
+using System;
+using System.IO;
+
+
+namespace FileIOApplication
+{
+    class FileIO
+    {
+        static void Main(string[] args)
+        {
+            String writeText = "Hello Srinath!"; // create a text string
+            File.WriteAllText("filename.txt", writeText); // create a file and write the contents of writetext to it
+            string readText = File.ReadAllText("filename.txt"); // Read the contents of the file
+            Console.WriteLine(readText);
+        }
+    }
+}
